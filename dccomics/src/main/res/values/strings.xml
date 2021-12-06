@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
+    <string name="app_name">DCComics</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="superman">Superman</string>
     <string name="nombre">Clark Kent</string>
     <string name="poderes">Super fueza, vuelo, invulnerabilidad, super velocidad,vision con calor, congelar</string>
@@ -33,4 +35,5 @@
         <item>Metrópolis</item>
 
     </string-array>
+
 </resources>

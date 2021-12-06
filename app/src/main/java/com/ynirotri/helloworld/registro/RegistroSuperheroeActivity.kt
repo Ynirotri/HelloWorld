@@ -1,4 +1,4 @@
-package com.ynirotri.helloworld
+package com.ynirotri.helloworld.registro
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,11 @@ import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
+import com.ynirotri.helloworld.detalle.DetalleActivity
+import com.ynirotri.helloworld.R
 
 class RegistroSuperheroeActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_superheroe)
@@ -53,10 +56,11 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
                 infoTextView.text =
                     getString(R.string.info, nombre, estatura, genero, poderes, ciudadNacimiento)
 
-                val superheroe = Superheroe(nombre, estatura, poderes, ciudadNacimiento, genero)
-                val intent = Intent(this,MainActivity:: class.java)
+                //val superheroe = Superheroe(nombre, estatura, poderes, ciudadNacimiento, genero)
+
+                val intent = Intent(this, DetalleActivity:: class.java)
                 intent.putExtra("nombre",nombre)
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, DetalleActivity::class.java))
             }
         }
     }
